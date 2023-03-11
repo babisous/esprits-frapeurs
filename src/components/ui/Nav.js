@@ -6,7 +6,7 @@ export default function Nav() {
 	return (
 		<div className="header">
 			<div className="navbar">
-				<Link href={"/"}>L'agence</Link>
+				<Link href={"/"}>L&apos;agence</Link>
 				<Link href={"/articles"}>Articles</Link>
 				<Link href={"/realisations"}>Réalisations</Link>
 				<Link href={"/contact"}>Contact</Link>
