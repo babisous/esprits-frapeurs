@@ -1,9 +1,5 @@
 import React from "react";
 
-import twitterIcon from "../assets/img/ef_twitter.png";
-import instaIcon from "../assets/img/ef_insta.png";
-import behanceIcon from "../assets/img/ef_behance.png";
-
 export default function Sidebar() {
 	return (
 		<div className="sidebar">
@@ -11,19 +7,19 @@ export default function Sidebar() {
 				<a href="https://twitter.com/espritsfrappeurs">
 					<div
 						className="socialIconSidebar"
-						style={{ backgroundImage: `url(${twitterIcon})` }}
+						id="twitterSocialIconSidebar"
 					></div>
 				</a>
 				<a href="https://www.instagram.com/espritsfrappeurs/">
 					<div
 						className="socialIconSidebar"
-						style={{ backgroundImage: `url(${instaIcon})` }}
+						id="instagramSocialIconSidebar"
 					></div>
 				</a>
 				<a href="https://www.behance.net/espritsfrappeurs">
 					<div
 						className="socialIconSidebar"
-						style={{ backgroundImage: `url(${behanceIcon})` }}
+						id="behanceSocialIconSidebar"
 					></div>
 				</a>
 			</div>

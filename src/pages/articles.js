@@ -6,7 +6,7 @@ export default function Articles({ articles }) {
 	articles = articles.data;
 	return (
 		<div>
-			{articles &&
+			{/* {articles &&
 				articles.map((article) => (
 					<div key={article.id}>
 						<Link href={`/articles/${article.id}`} passHref>
@@ -17,7 +17,8 @@ export default function Articles({ articles }) {
 						<p>{article.attributes.Slug}</p>
 						<ReactMarkdown>{article.attributes.Body}</ReactMarkdown>
 					</div>
-				))}
+				))} */}
+			<h1>Homepage</h1>
 		</div>
 	);
 }

@@ -8,10 +8,15 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home({ articles }) {
 	return (
 		<Layout>
+			<section className="heroHomepage">
+				<h1 id="nameHeroHomepage">Esprits Frappeurs™</h1>
+				<h1 id="roleHeroHomepage">L’agence web & créative</h1>
+				<h1 id="catchphraseHeroHomepage">Pour une com’ qui cogne</h1>
+				<h1 id="catchphrase2HeroHomepage">Qui sait marquer l’esprit</h1>
+			</section>
 			{articles.map((article) => (
 				<div key={article.id}>
-					<h1>{article.fields.title}</h1>
-					<ReactMarkdown>{article.fields.content}</ReactMarkdown>
+					<p>{article.fields.title}</p>
 				</div>
 			))}
 		</Layout>

@@ -62,7 +62,7 @@ a {
 	width: 25em;
 }
 
-.App {
+main {
 	display: flex;
 	width: 100%;
 }
@@ -74,6 +74,8 @@ a {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+
+	width: fit-content;
 
 	background-color: #fff;
 
@@ -112,7 +114,11 @@ a {
 	font-weight: 600;
 }
 
-.contentPage {
+.pageContent {
+	width: 100%;
+}
+
+.pageContainer {
 	width: 100%;
 }
 
@@ -129,4 +135,29 @@ a {
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 2em;
+}
+
+#twitterSocialIconSidebar {
+	background-image: url("../assets/img/ef_twitter.png");
+}
+
+#instagramSocialIconSidebar {
+	background-image: url("../assets/img/ef_insta.png");
+}
+
+#behanceSocialIconSidebar {
+	background-image: url("../assets/img/ef_behance.png");
+}
+
+.heroHomepage {
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../assets/img/ef_heroBackground.png");
+	background-position: right center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-bottom: #0e2ce2 2px solid;
 }
