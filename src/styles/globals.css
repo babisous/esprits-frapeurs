@@ -74,14 +74,16 @@ main {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-
-	width: fit-content;
-
+	width: 120px;
 	background-color: #fff;
-
 	position: sticky;
 	top: 0;
 	left: 0;
+}
+
+.pageContainer {
+	flex: 1;
+	max-width: calc(100% - 120px);
 }
 
 .textSidebar {
@@ -115,10 +117,6 @@ main {
 }
 
 .pageContent {
-	width: 100%;
-}
-
-.pageContainer {
 	width: 100%;
 }
 
@@ -172,6 +170,44 @@ main {
 	border-right: #0e2ce2 2px solid;
 }
 
+.thumbnailArticleHomepage {
+	height: 15em;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom: #0e2ce2 solid 2px;
+	position: relative;
+	width: 100%;
+}
+
+.badge {
+	background-color: #fff;
+	padding: 0.2em 1.2em;
+	border: #0e2ce2 2px solid;
+	border-radius: 56px;
+	width: fit-content;
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+	font-size: 1em;
+}
+
+.contentArticleHomepage {
+	border-bottom: #0e2ce2 solid 2px;
+	padding: 0.5em 1.2em;
+}
+.titleArticleHomepage {
+	width: 100%;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1.5em;
+	color: #0e2ce2;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
 #articleHomepage1 {
 	width: 40%;
 }
@@ -182,4 +218,39 @@ main {
 
 #articleHomepage3 {
 	width: 30%;
+}
+
+.articleHero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../assets/img/ef_heroBackground.png");
+	background-position: right center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-bottom: #0e2ce2 2px solid;
+	padding: 10em;
+}
+
+/* articleContent h1 */
+.articleContent h1 {
+	font-size: 6em;
+	font-weight: 200;
+	color: #0e2ce2;
+}
+
+.articleContent h2 {
+	font-size: 5em;
+	font-weight: 600;
+	color: #0e2ce2;
+}
+
+.articleContent li {
+	font-size: 1.5em;
+	color: #0e2ce2;
+}
+
+.articleContent {
+	padding: 6em;
 }

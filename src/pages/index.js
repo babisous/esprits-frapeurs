@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import Layout from "../components/layouts/Layout";
 import { getTable } from "@/lib/airtable";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,22 @@ export default function Home({ articles }) {
 						className="articleCardHomepage"
 						id={"articleHomepage" + (index + 1)}
 					>
-						<p>{article.fields.title}</p>
+						<div
+							className="thumbnailArticleHomepage"
+							id={"thumbnailArticleHomepage" + (index + 1)}
+							style={{
+								backgroundImage: `url(${article.fields.thumbnailUrl})`,
+							}}
+						>
+							<div className="badge">
+								<p>Article</p>
+							</div>
+						</div>
+						<div className="contentArticleHomepage">
+							<Link href={`/article/${article.id}`}>
+								<h3 className="titleArticleHomepage">{article.fields.title}</h3>
+							</Link>
+						</div>
 					</div>
 				))}
 			</section>
