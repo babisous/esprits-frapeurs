@@ -14,11 +14,17 @@ export default function Home({ articles }) {
 				<h1 id="catchphraseHeroHomepage">Pour une com’ qui cogne</h1>
 				<h1 id="catchphrase2HeroHomepage">Qui sait marquer l’esprit</h1>
 			</section>
-			{articles.map((article) => (
-				<div key={article.id}>
-					<p>{article.fields.title}</p>
-				</div>
-			))}
+			<section className="articlesContainerHomepage">
+				{articles.map((article, index) => (
+					<div
+						key={article.id}
+						className="articleCardHomepage"
+						id={"articleHomepage" + (index + 1)}
+					>
+						<p>{article.fields.title}</p>
+					</div>
+				))}
+			</section>
 		</Layout>
 	);
 }

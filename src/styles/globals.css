@@ -161,3 +161,25 @@ main {
 	background-repeat: no-repeat;
 	border-bottom: #0e2ce2 2px solid;
 }
+
+.articlesContainerHomepage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.articleCardHomepage {
+	border-right: #0e2ce2 2px solid;
+}
+
+#articleHomepage1 {
+	width: 40%;
+}
+
+#articleHomepage2 {
+	width: 30%;
+}
+
+#articleHomepage3 {
+	width: 30%;
+}
