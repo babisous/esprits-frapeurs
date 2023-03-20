@@ -28,7 +28,7 @@ code {
 }
 
 p {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 400;
 	color: #0e2ce2;
 }
@@ -60,6 +60,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	width: 25em;
+	font-size: 1.2em;
 }
 
 main {
@@ -202,10 +203,10 @@ main {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: #0e2ce2;
 	font-weight: 400;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 #articleHomepage1 {
@@ -247,7 +248,7 @@ main {
 }
 
 .articleContent li {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: #0e2ce2;
 }
 
