@@ -22,6 +22,12 @@ h1 {
 	color: #0e2ce2;
 }
 
+h2 {
+	font-size: 4em;
+	font-weight: 800;
+	color: #0e2ce2;
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
@@ -254,4 +260,69 @@ main {
 
 .articleContent {
 	padding: 6em;
+}
+
+.prices {
+	background-image: url("../assets/img/ef_heroPriceBackground.png");
+	background-position: right center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-bottom: #0e2ce2 2px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5em;
+}
+
+.cardsPricesContainer {
+	border: #0e2ce2 2px solid;
+	background-color: #fff;
+	width: 28em;
+}
+
+.cardPriceContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 4em;
+}
+
+.priceP {
+	font-size: 6em;
+	font-weight: 800;
+	color: #0e2ce2;
+}
+
+.cardPriceContent li {
+	font-size: 2em;
+	font-weight: 800;
+	color: #0e2ce2;
+}
+
+.cardPriceContent ul {
+	margin-top: 2em;
+}
+
+.priceTitle {
+	background-color: #0e2ce2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+.priceTitle h2 {
+	font-weight: 800;
+	color: #fff;
+	font-size: 2em;
+}
+
+.sectionCards {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	margin-top: 5em;
 }

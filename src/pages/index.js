@@ -41,6 +41,55 @@ export default function Home({ articles }) {
 					</div>
 				))}
 			</section>
+			<section className="prices">
+				<h1>Votre identité numérique ne coûtera pas un bras.</h1>
+				<div className="sectionCards">
+					<div className="cardsPricesContainer">
+						<div className="cardPriceContent">
+							<p>À partir de :</p>
+							<p className="priceP">1490€</p>
+							<p>
+								Le coût d&apos;un site web débute à partir de 1490€, mais peut
+								varier en fonction des besoins et exigences spécifiques du
+								client. Le prix final sera établi après une évaluation
+								approfondie des fonctionnalités requises et des caractéristiques
+								souhaitées pour le site.
+							</p>
+							<ul>
+								<li>Création du site</li>
+								<li>Web design</li>
+								<li>Hébergement</li>
+								<li>Visibilité sur Google</li>
+							</ul>
+						</div>
+						<div className="priceTitle">
+							<h2>Site vitrine</h2>
+						</div>
+					</div>
+					<div className="cardsPricesContainer">
+						<div className="cardPriceContent">
+							<p>À partir de :</p>
+							<p className="priceP">790€</p>
+							<p>
+								Le coût d&apos;un site web débute à partir de 1490€, mais peut
+								varier en fonction des besoins et exigences spécifiques du
+								client. Le prix final sera établi après une évaluation
+								approfondie des fonctionnalités requises et des caractéristiques
+								souhaitées pour le site.
+							</p>
+							<ul>
+								<li>Création du site</li>
+								<li>Web design</li>
+								<li>Hébergement</li>
+								<li>Visibilité sur Google</li>
+							</ul>
+						</div>
+						<div className="priceTitle">
+							<h2>Identité de marque</h2>
+						</div>
+					</div>
+				</div>
+			</section>
 		</Layout>
 	);
 }
@@ -50,8 +99,9 @@ export async function getStaticProps() {
 		sort: [{ field: "createdAt", direction: "desc" }],
 		maxRecords: 3,
 	});
-	console.log(articles);
+
 	return {
 		props: { articles },
+		revalidate: 60, // régénère la page toutes les 60 secondes
 	};
 }
