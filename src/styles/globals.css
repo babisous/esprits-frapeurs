@@ -178,13 +178,15 @@ main {
 }
 
 .thumbnailArticleHomepage {
-	height: 15em;
+	height: 20em;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-bottom: #0e2ce2 solid 2px;
 	position: relative;
 	width: 100%;
+
+	image-rendering: pixelated;
 }
 
 .badge {
@@ -319,10 +321,32 @@ main {
 	font-size: 2em;
 }
 
+.priceTitleSection {
+	max-width: 940px;
+	font-size: 5em;
+}
+
 .sectionCards {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 3em;
 	align-items: center;
 	width: 100%;
 	margin-top: 5em;
+}
+
+.priceDescription {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5em;
+}
+
+.priceDescription p {
+	font-size: 2.9em;
+	font-weight: 800;
+	color: #0e2ce2;
+	max-width: 90%;
+	text-align: center;
 }

@@ -7,6 +7,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ articles }) {
+	console.log(articles);
 	return (
 		<Layout>
 			<section className="heroHomepage">
@@ -26,7 +27,7 @@ export default function Home({ articles }) {
 							className="thumbnailArticleHomepage"
 							id={"thumbnailArticleHomepage" + (index + 1)}
 							style={{
-								backgroundImage: `url(${article.fields.thumbnailUrl})`,
+								backgroundImage: `url(${article.fields.thumbnail[0].url})`,
 							}}
 						>
 							<div className="badge">
@@ -42,7 +43,9 @@ export default function Home({ articles }) {
 				))}
 			</section>
 			<section className="prices">
-				<h1>Votre identité numérique ne coûtera pas un bras.</h1>
+				<h1 className="priceTitleSection">
+					Votre identité numérique ne coûtera pas un bras.
+				</h1>
 				<div className="sectionCards">
 					<div className="cardsPricesContainer">
 						<div className="cardPriceContent">
@@ -88,6 +91,13 @@ export default function Home({ articles }) {
 							<h2>Identité de marque</h2>
 						</div>
 					</div>
+				</div>
+				<div className="priceDescription">
+					<p>
+						Pas encore conquis ? Ne vous inquiétez pas on en a encore sous le
+						capot. Contactez-nous pour toutes demandes qui sortent des sentiers
+						battus !
+					</p>
 				</div>
 			</section>
 		</Layout>
