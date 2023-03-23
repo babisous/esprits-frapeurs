@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useRef } from "react";
 
 const OnArrive = () => {
@@ -23,7 +24,7 @@ const OnArrive = () => {
 			></video>
 			<div className="onArriveText">
 				<h1>On arrive bientôt...</h1>
-				<img id="eyes" src="eyes.svg" alt="" />
+				<Image width={24} height={42} id="eyes" src="eyes.svg" alt="" />
 			</div>
 		</section>
 	);
