@@ -528,6 +528,10 @@ main {
 
 #eyes {
 	width: 6em;
+	background-image: url("../assets/img/eyes.svg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 #onArriveVideo {

@@ -24,7 +24,7 @@ const OnArrive = () => {
 			></video>
 			<div className="onArriveText">
 				<h1>On arrive bientôt...</h1>
-				<Image width={24} height={42} id="eyes" src="eyes.svg" alt="" />
+				<div id="eyes"></div>
 			</div>
 		</section>
 	);
