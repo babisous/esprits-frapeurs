@@ -1,7 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-	reactStrictMode: true,
-	unstable_runtimeJS: false,
-};
+const { parsed: env } = require("dotenv").config();
 
-module.exports = nextConfig;
+module.exports = {
+	env: env,
+	reactStrictMode: true,
+};

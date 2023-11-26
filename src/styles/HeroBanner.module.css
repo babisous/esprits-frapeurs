@@ -1,0 +1,70 @@
+.heroBannerContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 8.125em);
+	background-color: #fff;
+	border-bottom: #0e2ce2 solid 2px;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 1.5em 0em;
+	gap: 2em;
+	width: 100%;
+}
+
+.heroBannerContent {
+	color: #0e2ce2;
+	font-size: 3em;
+	display: flex;
+	flex-direction: column;
+	line-height: 96px;
+}
+
+.heroBanner1 {
+	position: relative;
+	left: -60px;
+}
+
+.heroBanner2 {
+	position: relative;
+	left: 55px;
+}
+
+.heroBanner3 {
+	position: relative;
+	left: -100px;
+}
+
+.heroBanner4 {
+	position: relative;
+	left: 60px;
+}
+
+@media (max-width: 768px) {
+	.heroBannerContent {
+		font-size: 0.75em;
+		line-height: 28px;
+		text-align: center;
+	}
+
+	.heroBannerContainer {
+		height: fit-content;
+		align-items: center;
+		justify-content: center;
+		width: calc(100vw - 4em);
+		padding: 3em 1em;
+		gap: 1em;
+		background-size: 200%;
+		background-position: top center;
+	}
+
+	.heroBanner1,
+	.heroBanner2,
+	.heroBanner3,
+	.heroBanner4 {
+		left: 0px;
+		top: 0px;
+	}
+}

@@ -1,0 +1,163 @@
+.title {
+	font-size: 1.6em;
+}
+
+.subtitle {
+	font-size: 1.3em;
+}
+
+.text {
+	font-size: 1em;
+}
+
+.logoTextContainer {
+	background-color: #fff;
+	display: flex;
+}
+
+.logoContainer {
+	border-right: #0e2ce2 solid 2px;
+	border-bottom: #0e2ce2 solid 2px;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3em;
+}
+
+.textContainer {
+	border-right: #0e2ce2 solid 2px;
+	border-bottom: #0e2ce2 solid 2px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	color: #0e2ce2;
+	justify-content: center;
+	padding: 3em;
+	gap: 1em;
+	background-color: #fff;
+}
+
+.agenceSectionContainer {
+	width: 100%;
+}
+
+.serviceSection {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	color: #0e2ce2;
+}
+
+.serviceCardDescription {
+	padding: 0.5em;
+	border-bottom: #0e2ce2 solid 2px;
+}
+
+.serviceCard {
+	display: flex;
+	flex-direction: column;
+	border-right: #0e2ce2 solid 2px;
+}
+
+.serviceCardThumbnail {
+	position: relative;
+}
+
+.serviceCard:nth-child(1) {
+	width: 50%;
+}
+
+.serviceCard:nth-child(1) > .serviceCardThumbnail {
+	border-bottom: #0e2ce2 solid 2px;
+	height: 500px;
+}
+
+/* .serviceCard:nth-child(1) > .serviceCardThumbnail > .serviceCardImage {
+} */
+
+.serviceCard:nth-child(1) > .serviceCardThumbnail > .serviceCardTitle {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.serviceCard:nth-child(1) > .serviceCardThumbnail > .serviceCardImg {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 40%;
+}
+
+.serviceCard:nth-child(2) {
+	width: 50%;
+	height: 20%;
+}
+
+.serviceCard:nth-child(2) > .serviceCardThumbnail {
+	height: 250px;
+	border-bottom: #0e2ce2 solid 2px;
+}
+
+.serviceCard:nth-child(2) > .serviceCardThumbnail > .serviceCardTitle {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+}
+
+.serviceCard:nth-child(2) > .serviceCardThumbnail > .serviceCardImg {
+	position: absolute;
+	right: 5%;
+	transform: translateX(-50%);
+	height: 100%;
+}
+
+.serviceCard:nth-child(3) {
+	width: 50%;
+	height: 20%;
+}
+
+.serviceCard:nth-child(3) > .serviceCardThumbnail {
+	height: 250px;
+	border-bottom: #0e2ce2 solid 2px;
+}
+
+.serviceCard:nth-child(3) > .serviceCardThumbnail > .serviceCardTitle {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+}
+
+.serviceRow {
+	display: flex;
+	flex-direction: row;
+	border-bottom: #0e2ce2 solid 2px;
+	width: 100%;
+}
+
+.logo {
+	height: 90%;
+	max-height: 430px;
+}
+
+.longTextContainer {
+	border-right: #0e2ce2 solid 2px;
+	border-bottom: #0e2ce2 solid 2px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: #0e2ce2;
+	justify-content: center;
+	padding: 3em;
+	gap: 1em;
+	background-color: #fff;
+}
+
+.serviceCardTitle {
+	font-size: 4em;
+}

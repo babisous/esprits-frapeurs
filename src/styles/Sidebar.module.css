@@ -1,0 +1,68 @@
+.sidebarContainer {
+	height: 100vh;
+	background-color: #fff;
+	border-right: solid 2px #0e2ce2;
+	color: #0e2ce2;
+
+	padding: 2.25em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 8.125em;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+
+	box-sizing: border-box;
+}
+
+.sidebarSocialMediaContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5em;
+}
+
+.sidebarTextContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+}
+
+.sidebarTextContainer p {
+	font-size: 24px;
+	font-weight: 200;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+
+.tm {
+	transform: rotate(-90deg) !important;
+}
+
+.espritsFrappeurs p {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+@media (max-width: 768px) {
+	.sidebarContainer {
+		width: 4em;
+		padding: 1.5em;
+	}
+	.sidebarTextContainer p {
+		font-size: 18px;
+	}
+	.sidebarSocialMediaContainer {
+		gap: 0.5em;
+	}
+	.socialMediaIcon {
+		height: 1.5em;
+		width: 1.5em;
+	}
+}

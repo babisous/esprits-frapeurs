@@ -1,0 +1,41 @@
+.footerContainer {
+	width: calc(100% - 8.125em);
+	height: 8em;
+	position: relative;
+	left: 8.125em;
+}
+
+.footerText {
+	font-size: 2em;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0;
+}
+
+.footerLogo {
+	position: absolute;
+	bottom: 0;
+	right: 3em;
+}
+
+.logo {
+	height: 112px;
+}
+
+@media (max-width: 768px) {
+	.logo {
+		display: none;
+	}
+	.footerContainer {
+		width: 100%;
+		height: 2em;
+		position: relative;
+		left: 4em;
+	}
+	.footerText {
+		font-size: 1em;
+		font-weight: 600;
+		position: absolute;
+		bottom: 0;
+	}
+}

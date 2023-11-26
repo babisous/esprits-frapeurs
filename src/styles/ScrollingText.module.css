@@ -1,0 +1,27 @@
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-50% + 100px)); /* Ajustez 100px si nécessaire */
+	}
+}
+
+.scrollingTextContainer {
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	width: 100%;
+	height: 28px;
+	display: flex;
+	align-items: center;
+}
+
+.marquee {
+	position: absolute;
+	animation: marquee 80s linear infinite;
+}
+
+.phrase {
+	padding-right: 2rem;
+}

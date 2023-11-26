@@ -1,0 +1,28 @@
+.container {
+	color: #0e2ce2;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 64px 12px 12px 12px;
+	font-size: 48px;
+	background-color: #fff;
+	border-bottom: #0e2ce2 2px solid;
+}
+
+.linkText {
+	font-size: 24px;
+	font-weight: 200;
+	text-decoration: underline;
+}
+
+/* MEDIA QUERY MOBILE */
+
+@media (max-width: 768px) {
+	.container {
+		padding: 32px 12px 12px 12px;
+		font-size: 24px;
+	}
+	.linkText {
+		font-size: 18px;
+	}
+}
