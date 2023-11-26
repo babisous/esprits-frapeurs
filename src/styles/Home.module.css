@@ -410,6 +410,10 @@
 	image-rendering: pixelated;
 }
 
+.serviceSectionMobile {
+	display: none;
+}
+
 @media (max-width: 768px) {
 	.agenceSection {
 		width: calc(100% - 4em);
