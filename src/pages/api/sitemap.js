@@ -6,7 +6,8 @@ export default async (req, res) => {
 	// Liste des routes de votre application
 	const links = [
 		{ url: "/", changefreq: "daily", priority: 1 },
-		// ajoutez d'autres routes ici
+		{ url: "/about", changefreq: "daily", priority: 0.5 },
+		{ url: "/contact", changefreq: "daily", priority: 0.5 },
 	];
 
 	// Crée un flux pour écrire le sitemap
