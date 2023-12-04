@@ -498,8 +498,6 @@
 		width: calc(100% - 4em);
 	}
 
-	.serviceSectionMobileItem {
-	}
 	.serviceSectionMobileItemHeader {
 		display: flex;
 		height: 72px;

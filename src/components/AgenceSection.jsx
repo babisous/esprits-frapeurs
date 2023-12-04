@@ -4,22 +4,45 @@ import styles from "@/styles/Home.module.css";
 const AgenceSection = () => {
 	const [message, setMessage] = useState("");
 	const [email, setEmail] = useState("");
+	const [buttonText, setButtonText] = useState("Nous contacter");
+	const [isSubmitted, setIsSubmitted] = useState(false);
+	const [errorMessage, setErrorMessage] = useState("");
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		const response = await fetch("/api/sendEmail", {
-			method: "POST",
-			body: JSON.stringify({ email, message }),
-			headers: {
-				"Content-Type": "application/json",
-			},
-		});
+		if (email === "" || message === "") {
+			setErrorMessage(
+				"Veuillez remplir à la fois le champ email et la description pour nous contacter."
+			);
+			return;
+		}
 
-		if (response.status === 200) {
-			alert("Email sent successfully!");
+		if (isSubmitted) {
+			setIsSubmitted(false);
+			setMessage("");
+			setEmail("");
+			setErrorMessage("");
+			setButtonText("Nous contacter");
 		} else {
-			alert("Error sending email.");
+			const response = await fetch("/api/sendEmail", {
+				method: "POST",
+				body: JSON.stringify({ email, message }),
+				headers: {
+					"Content-Type": "application/json",
+				},
+			});
+
+			if (response.status === 200) {
+				setErrorMessage(
+					"Merci de nous avoir partagé votre projet on revient vers vous le plus vite possible ;)"
+				);
+				setButtonText("Nous recontacter");
+				setIsSubmitted(true);
+				setMessage(""); // reset message
+			} else {
+				alert("Erreur lors de l'envoi de l'email.");
+			}
 		}
 	};
 
@@ -85,6 +108,7 @@ const AgenceSection = () => {
 								placeholder="votremail@ici.fr"
 								value={email}
 								onChange={(e) => setEmail(e.target.value)}
+								disabled={isSubmitted}
 							/>
 						</label>
 
@@ -92,10 +116,14 @@ const AgenceSection = () => {
 							<p className={styles.labelText}>Description :</p>
 							<textarea
 								className={styles.textarea}
-								placeholder="Ici, vous pouvez nous parler de votre projet. Hésitez pas à le détailler un maximum ;)"
+								placeholder={
+									errorMessage ||
+									"Ici, vous pouvez nous parler de votre projet. Hésitez pas à le détailler un maximum ;)"
+								}
 								value={message}
 								onChange={(e) => setMessage(e.target.value)}
-							></textarea>
+								disabled={isSubmitted}
+							/>
 						</label>
 
 						<button
@@ -103,7 +131,7 @@ const AgenceSection = () => {
 							type="button"
 							onClick={handleSubmit}
 						>
-							Nous contacter
+							{buttonText}
 						</button>
 					</div>
 				</div>
