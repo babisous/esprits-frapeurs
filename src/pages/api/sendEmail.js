@@ -20,6 +20,16 @@ export default async function handler(req, res) {
 				text: req.body.message,
 			});
 
+			// Ajouter ici l'événement Google Analytics
+			if (typeof window !== "undefined") {
+				window.dataLayer.push({
+					event: "email_sent",
+					category: "Contact Form",
+					action: "Send",
+					label: "Email Sent",
+				});
+			}
+
 			res.status(200).send("Email sent successfully");
 		} catch (error) {
 			console.error(error);

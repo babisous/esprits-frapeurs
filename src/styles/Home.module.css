@@ -380,19 +380,19 @@
 .service2Section {
 	background-color: #fff;
 	color: #0e2ce2;
-	padding-top: 64px;
-	padding-bottom: 64px;
+
+	padding: 2em;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-gap: 50px 0;
-	justify-items: center; /* Ajouté pour centrer horizontalement */
-	align-items: center; /* Ajouté pour centrer verticalement */
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px; /* Ajustez cette valeur pour changer l'écart entre les éléments */
+	justify-items: center;
+	align-items: start; /* Modifié de center à start pour aligner les éléments en haut */
 }
 
 .service2Card {
 	border: #0e2ce2 solid 2px;
 	max-width: 500px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -403,8 +403,8 @@
 }
 
 .service2CardThumbnail {
-	width: 100%;
-	height: 500px;
+	width: 100%; /* Assurez-vous que la largeur est définie à 100% */
+	height: 400px; /* Ajustez cette valeur pour changer la hauteur des vignettes */
 	background-size: 110%;
 	background-position: center;
 	image-rendering: pixelated;

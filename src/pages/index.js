@@ -402,6 +402,7 @@ const Home = ({ projects }) => {
 					<div className={styles.serviceCardDescription}>
 						<h4>Google Analytics, le Révélateur de Tendances</h4>
 						<p>
+							<br />
 							Obtenez des insights précieux sur le comportement des utilisateurs
 							et optimisez votre stratégie en ligne.
 						</p>
@@ -417,6 +418,7 @@ const Home = ({ projects }) => {
 							Publicité qui Fait Mouche, pas une seule grenouille à l’Horizon
 						</h4>
 						<p>
+							<br />
 							Atteignez votre public cible avec des campagnes publicitaires
 							ciblées et percutantes qui génèrent des résultats tangibles.
 						</p>
@@ -430,9 +432,10 @@ const Home = ({ projects }) => {
 					<div className={styles.serviceCardDescription}>
 						<h4>
 							Atteignez votre public cible avec des campagnes publicitaires
-							ciblées et percutantes qui génèrent des résultats tangibles.
+							ciblées
 						</h4>
 						<p>
+							<br />
 							Augmentez vos taux de conversion grâce à des stratégies efficaces
 							qui incitent les visiteurs à passer à l'action.
 						</p>
@@ -449,6 +452,7 @@ const Home = ({ projects }) => {
 							Chôme Pas
 						</h4>
 						<p>
+							<br />
 							Bénéficiez d'un accompagnement personnalisé et d'une assistance
 							réactive pour optimiser votre présence en ligne et atteindre vos
 							objectifs.
