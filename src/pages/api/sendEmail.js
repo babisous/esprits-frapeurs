@@ -23,7 +23,7 @@ export default async function handler(req, res) {
 			// Ajouter ici l'événement Google Analytics
 			if (typeof window !== "undefined") {
 				window.dataLayer.push({
-					event: "email_sent",
+					event_name: "email_sent",
 					category: "Contact Form",
 					action: "Send",
 					label: "Email Sent",

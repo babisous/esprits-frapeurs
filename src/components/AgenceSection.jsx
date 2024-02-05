@@ -40,6 +40,17 @@ const AgenceSection = () => {
 				setButtonText("Nous recontacter");
 				setIsSubmitted(true);
 				setMessage(""); // reset message
+
+				// Envoyer l'événement Google Analytics
+				if (typeof window !== "undefined") {
+					window.dataLayer = window.dataLayer || [];
+					window.dataLayer.push({
+						event: "email_sent",
+						category: "Contact Form",
+						action: "Send",
+						label: "Email Sent",
+					});
+				}
 			} else {
 				alert("Erreur lors de l'envoi de l'email.");
 			}

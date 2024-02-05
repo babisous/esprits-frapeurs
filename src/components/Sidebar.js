@@ -36,21 +36,21 @@ const Sidebar = () => {
 	return (
 		<div className={styles.sidebarContainer}>
 			<div className={styles.sidebarSocialMediaContainer}>
-				<Link href={"/"}>
+				<Link href={"https://twitter.com/esprtsfrappeurs"}>
 					<img
 						className={styles.socialMediaIcon}
 						src="/img/twitter.svg"
 						alt=""
 					/>
 				</Link>
-				<Link href={"/"}>
+				<Link href={"https://www.instagram.com/esprits.frappeurs/"}>
 					<img
 						className={styles.socialMediaIcon}
 						src="/img/instagram.svg"
 						alt=""
 					/>
 				</Link>
-				<Link href={"/"}>
+				<Link href={"https://www.behance.net/espritsfrappeurs"}>
 					<img
 						className={styles.socialMediaIcon}
 						src="/img/behance.svg"
