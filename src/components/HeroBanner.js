@@ -32,8 +32,9 @@ const HeroBanner = () => {
 					text="Nous contacter"
 					onClick={() => {
 						const element = document.querySelector("#contact");
+						const offset = window.innerWidth <= 768 ? -200 : 96; // -200 pour mobile, 96 pour desktop
 						window.scroll({
-							top: element.offsetTop - 96,
+							top: element.offsetTop - offset,
 							left: 0,
 							behavior: "smooth",
 						});
